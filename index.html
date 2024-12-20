@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-    <title>{{ name }}'s Watchlist</title>
+    <title>文件上传</title>
 </head>
 <body>
-    <!-- YOLOv5 检测后的图片展示 -->
-    <h3>YOLOv5 Detection Results (Image)</h3>
-    <div>
-        <img alt="YOLOv5 Detected Image with bounding boxes" class="detected-image" src="{{ url_for('static', filename=result_image) }}">
-    </div>
 
-    <!-- YOLOv5 检测后的视频展示 -->
-    <h3>YOLOv5 Detection Results (Video)</h3>
-    <div>
-        <video width="640" height="360" controls title="YOLOv5 Detection Video">
-            <source src="{{ url_for('static', filename=result_video) }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <h2>上传文件</h2>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="file">选择图片或视频文件：</label>
+        <input type="file" name="file" accept="image/*,video/*" id="file" required>
+        <button type="submit">上传</button>
+    </form>
+
 </body>
 </html>
+
 
 
 
