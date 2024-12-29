@@ -3,5 +3,5 @@
 header('Content-Type: image/jpeg');
 
 // 读取图片并输出
-readfile('image/11.jpg');
+readfile('/11.jpg');
 ?>
