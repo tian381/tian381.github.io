@@ -1,22 +1,91 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文件上传</title>
+    <title>Your Yolo</title>
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #07a8f3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #25d2ec;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0a7fc7;
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.3em;
+        }
+
+        /* Responsive design for small devices */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            ul {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Your Yolo</h1>
+        <p><em>As long as miss, will meet.</em></p>
+    </header>
 
-    <h2>上传文件</h2>
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <label for="file">选择图片或视频文件：</label>
-        <input type="file" name="file" accept="image/*,video/*" id="file" required>
-        <button type="submit">上传</button>
-    </form>
+    <div style="text-align: center;">
+        <ul>
+            <li><a href="http://localhost/image.php" target="_blank">Image Page</a></li>
+            <li><a href="http://localhost/video.php" target="_blank">Video Page</a></li>
+        </ul>
+    </div>
 
+    <footer style="text-align: center; padding: 20px; background-color: #07a8f3; color: white;">
+        <p>&copy; 2024 Your Yolo. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
 
 
 
